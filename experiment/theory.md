@@ -37,7 +37,7 @@ Massive parallel sequencing is the basics factor employed in NGS sequencer. The 
 After sequencing, the next step is to use specialized software packages to analyse the recorded data. Bioinformatics tools aid in converting raw sequencing data into meaningful results. Bioinformatics processes in NGS includes base calling, read alignment, variant identification, and variant annotation. The sequence information were compared to human genome sequence as reference for identifying presence of variations such as diseases or mutations in the targeted sequence of interest. 
 
 #### Steps:
-&nbsp;
+
 ##### Read cleanup 
 
 This removes any low-quality sequence reads and/or portions of reads and output is the “cleaned” FASTQ file. The raw data analysis was based on image processing and base calling. Usually FASTQ format is employed for storing raw biological sequence data which is a standard text-based format, standard for storing the output of high throughput sequencing instruments. It stores corresponding scores of a sequence of interest. The steps include trimming adapters,  and de-duplication of reads to remove repeat reads of the library fragments and reads of PCR amplicons of the same sequence.
