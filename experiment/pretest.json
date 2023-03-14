@@ -2,38 +2,73 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "1.	Determining the order of A, T, G ,C in a strand of DNA",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Ligation",
+        "b": "DNA sequencing",
+        "c": "PCR",
+        "d": "Recombination"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
+
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
+  
+    
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Identify the one that determines the amount of G equals C, and the amount of A equals T",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "X-ray diffusion",
+        "b": "Chargaff’ rule",
+        "c": "DNA Sequencing",
+        "d": "None"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
+      
+      "correctAnswer": "b",
       "difficulty": "beginner"
-    }
+    },
+
+
+    {
+            "question": "GC ratio analysis is applicable in",
+      "answers": {
+        "a": "Understanding the statistical significance of a DNA sequence",
+        "b": "Ecological and evolutionary significance of species",
+        "c": "Identifying annealing temperature of a DNA sequence",
+        "d": "All the above"
+      },
+      
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+
+
+    {
+      "question": "Identify the reverse complement of ACCTGAG",
+"answers": {
+  "a": "TGGACTC",
+  "b": "GAGTCCA",
+  "c": "CTCAGGT",
+  "d": "GTCACCT"
+},
+
+"correctAnswer": "c",
+"difficulty": "beginner"
+},
+
+
+{
+  "question": "According to Chargaff's rule, ratio of purines and pyrimidines in a DNA sequence",
+"answers": {
+"a": "2:1",
+"b": "1:2",
+"c": "1:1",
+"d": "2:2"
+},
+
+"correctAnswer": "c",
+"difficulty": "beginner"
+}
+
   ]
 }
