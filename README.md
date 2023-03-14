@@ -12,7 +12,7 @@ The goal of proposed virtual laboratories is to achieve a conceptual understandi
   
 With this experiment, the user can
   1. Understand the basics of Next generation sequencing 
-  2. Analysing the FASTQ files 
+  2. Analyse the FASTQ files 
 
 
 <b>Name of Developer | <b> Dr. Shyam Diwakar
