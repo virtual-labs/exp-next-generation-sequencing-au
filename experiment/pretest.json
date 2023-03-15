@@ -16,29 +16,29 @@
   
     
     {
-      "question": "Identify the one that determines the amount of G equals C, and the amount of A equals T",
+      "question": "Chain termination in sanger sequencing is due to the presence of",
       "answers": {
-        "a": "X-ray diffusion",
-        "b": "Chargaff’ rule",
-        "c": "DNA Sequencing",
-        "d": "None"
+        "a": "1)	Primer",
+        "b": "Nucleotides",
+        "c": "ddNTP",
+        "d": "dNTP"
       },
       
-      "correctAnswer": "b",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },
 
 
     {
-            "question": "GC ratio analysis is applicable in",
+            "question": "Typical workflow in NGS",
       "answers": {
-        "a": "Understanding the statistical significance of a DNA sequence",
-        "b": "Ecological and evolutionary significance of species",
-        "c": "Identifying annealing temperature of a DNA sequence",
-        "d": "All the above"
+        "a": "1)	Sample Preparation, DNA Sequencing, Data Analysis, Mutation calling",
+        "b": "Library Preparation, Sample analysis, DNA sequencing, Data analysis",
+        "c": "Sample preparation, Creating Library, DNA sequencing, Data Analysis",
+        "d": "Constructing Library, Fragmenting DNA, Data Analysis, PCR amplification"
       },
       
-      "correctAnswer": "d",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },
 
