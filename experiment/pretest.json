@@ -2,38 +2,59 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Determining the order of A, T, G ,C in a strand of DNA",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Ligation",
+        "b": "DNA sequencing",
+        "c": "PCR",
+        "d": "Recombination"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
+
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
+  
+    
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Chain termination in sanger sequencing is due to the presence of",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Primer",
+        "b": "Nucleotides",
+        "c": "ddNTP",
+        "d": "dNTP"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
+      
       "correctAnswer": "c",
       "difficulty": "beginner"
-    }
+    },
+
+
+    {
+            "question": "Typical workflow in NGS",
+      "answers": {
+        "a": "Sample Preparation, DNA Sequencing, Data Analysis, Mutation calling",
+        "b": "Library Preparation, Sample analysis, DNA sequencing, Data analysis",
+        "c": "Sample preparation, Creating Library, DNA sequencing, Data Analysis",
+        "d": "Constructing Library, Fragmenting DNA, Data Analysis, PCR amplification"
+      },
+      
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+
+
+    {
+      "question": "Bioinformatics tools are import in NGS as it includes",
+"answers": {
+  "a": "Removing of low-quality sequence reads",
+  "b": "Sequence alignment",
+  "c": "Identifying mutation",
+  "d": "All the above"
+},
+
+"correctAnswer": "d",
+"difficulty": "beginner"
+}
+
   ]
 }
