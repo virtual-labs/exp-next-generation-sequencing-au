@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "1.	Determining the order of A, T, G ,C in a strand of DNA",
+      "question": "Determining the order of A, T, G ,C in a strand of DNA",
       "answers": {
         "a": "Ligation",
         "b": "DNA sequencing",
@@ -18,7 +18,7 @@
     {
       "question": "Chain termination in sanger sequencing is due to the presence of",
       "answers": {
-        "a": "1)	Primer",
+        "a": "Primer",
         "b": "Nucleotides",
         "c": "ddNTP",
         "d": "dNTP"
@@ -32,7 +32,7 @@
     {
             "question": "Typical workflow in NGS",
       "answers": {
-        "a": "1)	Sample Preparation, DNA Sequencing, Data Analysis, Mutation calling",
+        "a": "Sample Preparation, DNA Sequencing, Data Analysis, Mutation calling",
         "b": "Library Preparation, Sample analysis, DNA sequencing, Data analysis",
         "c": "Sample preparation, Creating Library, DNA sequencing, Data Analysis",
         "d": "Constructing Library, Fragmenting DNA, Data Analysis, PCR amplification"
@@ -44,29 +44,15 @@
 
 
     {
-      "question": "Identify the reverse complement of ACCTGAG",
+      "question": "Bioinformatics tools are import in NGS as it includes",
 "answers": {
-  "a": "TGGACTC",
-  "b": "GAGTCCA",
-  "c": "CTCAGGT",
-  "d": "GTCACCT"
+  "a": "Removing of low-quality sequence reads",
+  "b": "Sequence alignment",
+  "c": "Identifying mutation",
+  "d": "All the above"
 },
 
-"correctAnswer": "c",
-"difficulty": "beginner"
-},
-
-
-{
-  "question": "According to Chargaff's rule, ratio of purines and pyrimidines in a DNA sequence",
-"answers": {
-"a": "2:1",
-"b": "1:2",
-"c": "1:1",
-"d": "2:2"
-},
-
-"correctAnswer": "c",
+"correctAnswer": "d",
 "difficulty": "beginner"
 }
 
