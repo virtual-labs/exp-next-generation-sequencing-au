@@ -129,7 +129,7 @@
                                         <input type="file" class="custom-file-input" id="actual-btn" accept=".txt" />
                                     </div>
                                     <input type="text" id="file-chosen" value="Filename displays here" hidden/><br>&nbsp;
-                                    <a href="160912_M03018_R1.fastq.txt" download="sample_fastq.txt">Download a Sample FASTQ file</a><br><br>
+                                    <a href="C:\Users\sreelekshmis\Documents\160912_M03018_R1.fastq.txt" download="sample_fasta.txt">Download a Sample FASTQ file</a><br><br>
                                     <p><button type="button" class="btn btn-danger btn-block" id= "Sequence" value="Sequence" onclick="myFunction()"><div style= font-family:sans-serif;font-size:16px;color:#fff>Sequence content</div></button></p>
                                     <p><button type="button" class="btn btn-danger btn-block" id= "GC" value="GC" onclick="GC_content()"><div style= font-family:sans-serif;font-size:16px;color:#fff>GC content</div></button></p>
                                     <p><button type="button" class="btn btn-danger btn-block" id="N" value="N" onclick="N_content()"><div style= font-family:sans-serif;font-size:16px;color:#fff>N content</div></button></p>
@@ -299,11 +299,11 @@
 
                 }
                 //document.getElementById("demo").innerHTML =len;
-                    var total= A_coun+T_coun+C_coun+G_coun;
+                var total= A_coun+T_coun+C_coun+G_coun;
                 var seq1 = document.getElementById("disp").value;
                 var newSeq1=[];
                 newSeq1= seq1.split('\n');
-               //document.getElementById("demo").innerHTML = newSeq1;
+               //document.getElementById("demo").innerHTML = G_coun;
 
                 var sequence1=[];
                 for(var m=1; m<=newSeq1.length; ){
@@ -315,12 +315,11 @@
                 }
                 //G count
 
-                /*var DNA1= sequence1.join('');
-                var NEWDNA1= [];
-                NEWDNA1=DNA1.split('');
-                var newDNA1=[];
-                newDNA1=DNA1.split('');*/
-                //document.getElementById("box").innerHTML = NEWDNA1.length;
+                
+
+                var newdna_1=[]
+                var newdna_1=newDNA1;
+                //document.getElementById("box").innerHTML = newDNA1.length;
                 var g_c=[];
                 for(var h=0; h<=newDNA1.length; h++){
                     
@@ -332,16 +331,18 @@
                     }
                    
                 }
-                // document.getElementById("box").innerHTML = g_c[75500];
+                //document.getElementById("box").innerHTML = newDNA1.length;
+
+                
+
                 const n =100000;
                 var result = new Array(Math.ceil(g_c.length / n))
                
                 .fill()
                 .map(_ => g_c.splice(0, n))
                 //document.getElementById("demo").innerHTML = result.length;
-
-
-
+                
+                
                 var G_c = [];       
     
                 for (var v=0; v<result.length;v++){
@@ -350,23 +351,25 @@
                     
                     g_count=0;
                     //G_COUNT=[];
-                    for( var u=0;u<=vlen;u++){
+                    for( var u=0;u<vlen;u++){
                         
                         if(result[v][u]=='1'){
                             //document.getElementById("box").innerHTML = v+","+u;
                             g_count +=result[v][u]
-                        }   
+                        }  
+                        
                     } 
                     G_c[v]=g_count;    
-                    //document.getElementById("box").innerHTML = G_c.length;                
+                    //document.getElementById("box").innerHTML = G_c;                
                 }
+                //document.getElementById("box").innerHTML = result[7].length; 
                 //document.getElementById("box").innerHTML = "hai";      
                 
                     
                 //C count
 
                 var c_c=[];
-                for(var p=0; p<=newDNA1.length; p++){
+                for(var p=0; p<=newdna_1.length; p++){
                     
                     if(newDNA1[p]==='C'){
                         c_c[p]=1;
@@ -376,7 +379,7 @@
                     }
                    
                 }
-                // document.getElementById("box").innerHTML = g_c[75500];
+                //document.getElementById("box").innerHTML = c_c;
                 const b =100000;
                 var result_c = new Array(Math.ceil(c_c.length / b))
                 .fill()
@@ -396,33 +399,49 @@
                         }   
                     } 
                     C_c[a]=c_count;    
-                   //document.getElementById("box").innerHTML = C_c.length;                
+                   //document.getElementById("box").innerHTML = C_c;                
                 }
                 //var subtotal= total+1;
                 //document.getElementById("demo").innerHTML = total;
 
                 //GC content calculation
 
+
+
+
+                const g=100000;
+                var g_total= new Array(Math.ceil(newdna_1.length/g))
+                .fill()
+                .map(_=> newdna_1.splice(0, g))
+
+                //document.getElementById("box").innerHTML = g_total[1].length;
+                //document.getElementById("box").innerHTML = newdna_1.length;
                 
-                 GC_total=[];
+                GC_total=[];
                 for (var e=0; e<G_c.length; e++){
-                    GC_total [e]= ((C_c[e]+G_c[e])/total)*100;
+                   // document.getElementById("demo").innerHTML = g_total[e].length;
+                   var glen=g_total[e].length;
+
+                    GC_total[e]= ((C_c[e]+G_c[e])/glen)*100;
+                    //document.getElementById("demo").innerHTML = GC_total;
+
                 }
-               // document.getElementById("demo").innerHTML = GC_total;
+                //GC_total[1]= ((C_c[1]+G_c[1])/g_total[1].length)*100;
+                document.getElementById("demo").innerHTML = GC_total;
 
                 
 
-                var xArray = [100000,200000,300000,400000,500000,600000,700000,80000,900000,1000000];
+                var xArray = [100000,200000,300000,400000,500000,600000,700000,800000,900000,1000000];
                 var yArray = GC_total;
                 var data = [{
                 x: xArray,
                 y: yArray,
-                mode:"dots"
+                mode:"lines"
                 }];
                 // Define Layout
                 var layout = {
-                xaxis: {range: [100000,1500000], title: "Position"},
-                yaxis: {range: [0, 10], title: "GC content(%)"},  
+                xaxis: {range: [10000,len1], title: "Position"},
+                yaxis: {range: [0, GC_total], title: "GC content(%)"},  
                 title: "GC Content in this sequence"
                 };
 
