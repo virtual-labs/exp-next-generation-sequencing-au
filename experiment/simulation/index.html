@@ -40,9 +40,9 @@
 
         .float-child {
             width: 100%;
-            max-width:700px;
-            float: left;
-            padding: 5px;
+            max-width:100%;
+            float: right;
+            padding: 1%;
             font-size: 18px;
         }  
         #file-content{
@@ -55,7 +55,7 @@
             background-color: white;
             border: black;
             color: black;
-            font-size: 18px;
+            font-size: 1.5vw;
             
         }
         hr {
@@ -70,7 +70,7 @@
 		    display: flex;
 	    }
 	    .at-item {
-		    color: #4f2037; font-weight:bold; font-size:45px;;
+		    color: #4f2037; font-weight:bold; font-size:300%;
 		    justify-content: center;
 		    text-decoration-color:#4f2037;  
 		    position: relative;
@@ -99,6 +99,13 @@
             text-shadow: 0 1px 1px rgba(255, 255, 255, 0.59);
         }
 
+        textarea{
+			width: 100%;
+ 	 		max-width: 100%;
+  			min-height: 100%;
+			font-size: 1.5vw;
+
+		}
     </style>
     <head>
 	    <meta charset="utf-8">
@@ -113,7 +120,7 @@
 
     <body style="background-color:white">
         <div class='at-container'>
-            <img src="images/logo.png" width="300" height="100" style="margin-left:-5%;">
+            <img src="images/logo.png" width="150vw" height="1%" style="margin-left:-5%;">
             &nbsp;&nbsp;&nbsp;&nbsp;
             <div class='at-item' >FASTQ Analyzer</div>
         </div>
@@ -245,7 +252,18 @@
                     xArray= ["A","T","G","C"];
                     yArray=[A_count,T_count,G_count,C_count];
                     //document.getElementById("demo").innerHTML = yArray;
-                    var layout = {title:"Sequence content"};
+                    var layout = {title:"Sequence content",
+                    autosize: true,
+                    width: 300,
+                    height: 500,
+                    margin: {
+                    l: 1,
+                    r: 1,
+                    b: 100,
+                    t: 100,
+                    pad: 4
+                    }};
+                    var config = {responsive: true};
                     var data = [{labels:xArray, values:yArray, type:"pie"}];
                     Plotly.newPlot("plot", data, layout);
                     
